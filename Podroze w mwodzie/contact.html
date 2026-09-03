@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Podróże Morskie</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Podróże Morskie</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="info.html">O nas</a></li>
+                <li><a href="#">Destynacje</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Miejsce 1</a></li>
+                        <li><a href="#">Miejsce 2</a></li>
+                        <li><a href="#">Miejsce 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="porady.html">Porady</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="contact-section">
+        <div class="container">
+            <h2>Kontakt z nami</h2>
+            <p>Masz pytania dotyczące podróży morskich? Skontaktuj się z nami! Możesz również wysłać list do nas... Golębiem, jeśli wolisz. 😉😉😉😉😉😉😉😉</p>
+
+            <form class="contact-form" action="#" method="post">
+                <div class="contact-options">
+                    <label for="contact-method">Wybierz metodę kontaktu:</label>
+                    <select id="contact-method" name="contact-method" onchange="showOptionalFields()">
+                        <option value="email">E-mail</option>
+                        <option value="phone" id="contact-method-phone">Telefon</option>
+                        <option value="pigeon" id="contact-method-pigeon">Gołąb</option>
+                    </select>
+                </div>
+
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <div id="phone-field" class="optional-field">
+                    <label for="phone">Numer telefonu:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div id="pigeon-field" class="optional-field">
+                    <label for="pigeon-name">Imię gołębia:</label>
+                    <input type="text" id="pigeon-name" name="pigeon-name">
+                </div>
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <a href="#" class="cta-button">Prześlij</a>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Podróże Morskie. Wszystkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showOptionalFields() {
+            var contactMethod = document.getElementById('contact-method').value;
+            var phoneField = document.getElementById('phone-field');
+            var pigeonField = document.getElementById('pigeon-field');
+            
+            phoneField.style.display = 'none';
+            pigeonField.style.display = 'none';
+
+            if (contactMethod === 'phone') {
+                phoneField.style.display = 'block';
+            } else if (contactMethod === 'pigeon') {
+                pigeonField.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
