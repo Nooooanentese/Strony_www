@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #041c2c;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.block {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid rgba(11, 61, 145, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: calc(33.33% - 40px);
+    margin-bottom: 20px;
+}
+
+.left {
+    background-color: #0b3d91;
+    box-shadow: 0px 0px 15px rgba(11, 61, 145, 0.8);
+}
+
+.middle {
+    background-color: #154c79;
+    box-shadow: 0px 0px 15px rgba(21, 76, 121, 0.8);
+}
+
+.right {
+    background-color: #022244;
+    box-shadow: 0px 0px 15px rgba(2, 34, 68, 0.8);
+}
+
+.blacktip {
+    background-color: black;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+.block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px rgba(0, 173, 239, 0.9);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 10px rgba(0, 173, 239, 0.9);
+}
+
+p {
+    text-indent: 40px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.block:hover p {
+    opacity: 1;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    max-width: 400px;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+img:hover {
+    filter: brightness(1.2);
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 990px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .block {
+        width: 50%;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .block {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.block {
+    animation: fadeIn 0.8s ease-in-out;
+}
