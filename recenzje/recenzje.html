@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recenzje</title>
+    <link rel="stylesheet" href="recenzjestyl.css">
+</head>
+<body>
+    <header>
+        <h1>Formularz Kontaktowy</h1>
+    </header>
+    <main>
+        <section class="left-section">
+            <form>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Wyślij</button>
+            </form>
+			   <section class="pentagon">
+            <div class="pentagon-item" style="right:15%; top:30%;"></div>
+            <div class="pentagon-item" style="left:15%; top:30%;"></div>
+            <div class="pentagon-item" style="left: 25%; top:80%;"></div>
+            <div class="pentagon-item" style="right: 25%; top:80%;"></div>
+            <div class="pentagon-item"></div>
+        </section>
+
+            <section>
+                <h2>Lista Zadań</h2>
+                <ol>
+                    <li>Zadanie 1
+                        <ol>
+                            <li>Podzadanie 1.1</li>
+                            <li>Podzadanie 1.2</li>
+                        </ol>
+                    </li>
+                    <li>Zadanie 2</li>
+                    <li>Zadanie 3</li>
+                </ol>
+            </section>
+        </section>
+
+        <section class="right-section">
+            <h2>Technologia i Gadżety</h2>
+            <article>
+                <h3>Nowinki technologiczne</h3>
+                <p>Świeże informacje o najnowszych osiągnięciach technologicznych.</p>
+                <img src="gadget.jpg" alt="Gadżet" width="100%">
+                <a href="recenzjagadgetu.html" target="_blank">Zobacz recenzję</a>
+            </article>
+            <article>
+                <h3>Recenzje Smartfonów</h3>
+                <p>Przeczytaj recenzję najnowszych modeli smartfonów.</p>
+                <img src="smartphone.jpg" alt="Smartfon" width="100%">
+                <a href="recenzjatelefonu.html" target="_blank">Zobacz recenzję</a>
+            </article>
+            <article>
+                <h3>Konsola do gier</h3>
+                <p>Najlepsze konsole do gier - porównania, recenzje, opinie.</p>
+                <img src="gaming-console.jpg" alt="Konsola" width="100%">
+                <a href="recenzjakonsoli.html" target="_blank">Zobacz recenzję</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Przykładowa Strona</p>
+    </footer>
+</body>
+</html>

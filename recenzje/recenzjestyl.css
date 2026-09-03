@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size-base: 16px;
+    --spacing-base: 16px;
+    --background-color: #f4f4f4;
+    --button-color: #3498db;
+    --form-background: white;
+    --border-color: #ccc;
+    --header-footer-color: white;
+    --button-hover-color: darken(var(--primary-color), 10%);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-base);
+    margin: 0;
+    padding: var(--spacing-base);
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+header, footer {
+    text-align: center;
+    padding: var(--spacing-base);
+    background-color: var(--secondary-color);
+    color: var(--header-footer-color);
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-section {
+    width: 60%;
+}
+
+.right-section {
+    width: 40%;
+    padding-left: var(--spacing-base);
+}
+
+form {
+    background-color: var(--form-background);
+    padding: var(--spacing-base);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: var(--spacing-base);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover-color);
+}
+
+section {
+    margin-top: var(--spacing-base);
+}
+
+ol {
+    padding-left: 20px;
+}
+
+.pentagon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: var(--spacing-base);
+    height: 300px;
+}
+.pentagon:nth-child(1) {
+right: 10%	
+}
+
+.pentagon-item {
+    width: 80px;
+    height: 80px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    position: absolute;
+}
+
+article {
+    margin-bottom: var(--spacing-base);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+}
+
+article h3 {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 8px;
+    }
+
+    header, footer {
+        padding: 8px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+}
