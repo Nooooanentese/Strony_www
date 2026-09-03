@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="MAIN_style.css">
+    <style>
+        .contact-form-container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        .contact-form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label {
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea, 
+        .contact-form select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        .contact-form .back-button {
+            background-color: #008CBA;
+            margin-top: 15px;
+        }
+
+        .contact-form .back-button:hover {
+            background-color: #007B9E;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>OmegaversePraktyki</h1>
+        </div>
+        <div class="menu">
+            <button id="settingsBtn" class="settings-btn">
+                <img src="img/settings.png" alt="Ustawienia">
+            </button>
+        </div>
+    </header>
+
+    <section class="headline">
+        <h2>Skontaktuj się z nami</h2>
+    </section>
+
+    <div class="contact-form-container">
+        <h2>Formularz Kontaktowy</h2>
+        <form class="contact-form">
+            <label for="name">Imię i Nazwisko</label>
+            <input type="text" id="name" name="name" required placeholder="Wpisz swoje imię i nazwisko">
+
+            <label for="email">Adres E-mail</label>
+            <input type="email" id="email" name="email" required placeholder="Wpisz swój e-mail">
+
+            <label for="phone">Numer Telefonu</label>
+            <input type="tel" id="phone" name="phone" placeholder="Wpisz swój numer telefonu">
+
+            <label for="preferred-contact">Preferowany sposób kontaktu</label>
+            <select id="preferred-contact" name="preferred-contact">
+                <option value="email">E-mail</option>
+                <option value="phone">Telefon</option>
+                <option value="whatsapp">WhatsApp</option>
+            </select>
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Napisz wiadomość..."></textarea>
+
+            <button type="submit">Wyślij</button>
+
+            <a href="MAIN_pg.html">
+                <button type="button" class="back-button">Powrót do strony głównej</button>
+            </a>
+        </form>
+    </div>
+
+    <div class="contact-info">
+        <h3>Inne opcje kontaktowe:</h3>
+        <p>Możesz skontaktować się z nami również poprzez:</p>
+        <p>Email: <a href="mailto:alfawrajter@gmail.com">alfawrajter@gmail.com</a></p>
+        <p>Telefon: <a href="tel:+48699422789">+48 699 422 789</a></p>
+        <p>WhatsApp: <a href="https://wa.me/48699422789">Kliknij tutaj, aby skontaktować się przez WhatsApp</a></p>
+    </div>
+
+    <footer>
+        <p><a href="#">Kontakt</a> | <a href="#">Polityka prywatności</a> | <a href="mailto:alfawrajter@gmail.com">alfawrajter@gmail.com</a> | <a href="tel:+48699422789">+48 699 422 789</a></p>
+    </footer>
+
+</body>
+</html>

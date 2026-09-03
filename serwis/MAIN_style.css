@@ -1,0 +1,184 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s;
+}
+
+header {
+    background-color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.settings-btn img {
+    width: 28px;
+    height: 28px;
+    filter: invert(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.settings-btn:hover img {
+    transform: rotate(90deg);
+}
+
+.headline {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.job-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.job-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.job-card:hover {
+    transform: scale(1.02);
+}
+
+.job-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.job-text h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.job-text p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#informatyk-text a {
+    display: inline-block;
+    color: #24c2f2;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #24c2f2;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#informatyk-text a:hover {
+    color: #205680;
+    border-color: #205680;
+}
+
+#mechanik-text a {
+    display: inline-block;
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid green;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#mechanik-text a:hover {
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+#elektryk-text a {
+    display: inline-block;
+    color: #afb50e;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #afb50e;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#elektryk-text a:hover {
+    color: #6d7006;
+    border-color: #6d7006;
+}
+
+#OZE-text a {
+    display: inline-block;
+    color: #cf770c;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #cf770c;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#OZE-text a:hover {
+    color: #995809;
+    border-color: #995809;
+}
+
+#mechatronik-text a {
+    display: inline-block;
+    color: #9111ab;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #9111ab;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+#mechatronik-text a:hover {
+    color: #5d0a6e;
+    border-color: #5d0a6e;
+}
+
+.job-image img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid lightgray;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
